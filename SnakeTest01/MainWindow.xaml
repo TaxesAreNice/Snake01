@@ -6,32 +6,85 @@
         xmlns:local="clr-namespace:SnakeTest01"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" KeyDown="Window_KeyDown">
-        
-    <Grid>
-        <Label x:Name="Block_1" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black" Foreground="Black"/>
-        <Label x:Name="Block_2" Content="" HorizontalAlignment="Left" Margin="65,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_3" Content="" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_4" Content="" HorizontalAlignment="Left" Margin="176,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_5" Content="" HorizontalAlignment="Left" Margin="231,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_6" Content="" HorizontalAlignment="Left" Margin="286,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_7" Content="" HorizontalAlignment="Left" Margin="342,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_8" Content="" HorizontalAlignment="Left" Margin="397,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_9" Content="" HorizontalAlignment="Left" Margin="452,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_10" Content="" HorizontalAlignment="Left" Margin="508,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_11" Content="" HorizontalAlignment="Left" Margin="563,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_12" Content="" HorizontalAlignment="Left" Margin="618,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_13" Content="" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_14" Content="" HorizontalAlignment="Left" Margin="65,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_15" Content="" HorizontalAlignment="Left" Margin="120,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_16" Content="" HorizontalAlignment="Left" Margin="176,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_17" Content="" HorizontalAlignment="Left" Margin="231,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_18" Content="" HorizontalAlignment="Left" Margin="286,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_19" Content="" HorizontalAlignment="Left" Margin="342,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_20" Content="" HorizontalAlignment="Left" Margin="397,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_21" Content="" HorizontalAlignment="Left" Margin="452,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_22" Content="" HorizontalAlignment="Left" Margin="508,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_23" Content="" HorizontalAlignment="Left" Margin="563,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
-        <Label x:Name="Block_24" Content="" HorizontalAlignment="Left" Margin="618,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
 
+    <Grid>
+        <Label x:Name="Block_1" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_2" Content="" HorizontalAlignment="Left" Margin="65,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_3" Content="" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_4" Content="" HorizontalAlignment="Left" Margin="176,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_5" Content="" HorizontalAlignment="Left" Margin="231,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_6" Content="" HorizontalAlignment="Left" Margin="286,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_7" Content="" HorizontalAlignment="Left" Margin="342,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_8" Content="" HorizontalAlignment="Left" Margin="397,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_9" Content="" HorizontalAlignment="Left" Margin="452,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_10" Content="" HorizontalAlignment="Left" Margin="508,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_11" Content="" HorizontalAlignment="Left" Margin="563,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_12" Content="" HorizontalAlignment="Left" Margin="618,10,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+
+            <Label x:Name="Block_13" Content="" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_14" Content="" HorizontalAlignment="Left" Margin="65,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_15" Content="" HorizontalAlignment="Left" Margin="120,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_16" Content="" HorizontalAlignment="Left" Margin="176,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_17" Content="" HorizontalAlignment="Left" Margin="231,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_18" Content="" HorizontalAlignment="Left" Margin="286,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_19" Content="" HorizontalAlignment="Left" Margin="342,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_20" Content="" HorizontalAlignment="Left" Margin="397,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_21" Content="" HorizontalAlignment="Left" Margin="452,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_22" Content="" HorizontalAlignment="Left" Margin="508,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_23" Content="" HorizontalAlignment="Left" Margin="563,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_24" Content="" HorizontalAlignment="Left" Margin="618,65,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+
+            <Label x:Name="Block_25" Content="" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_26" Content="" HorizontalAlignment="Left" Margin="65,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_27" Content="" HorizontalAlignment="Left" Margin="120,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_28" Content="" HorizontalAlignment="Left" Margin="176,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_29" Content="" HorizontalAlignment="Left" Margin="231,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_30" Content="" HorizontalAlignment="Left" Margin="286,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_31" Content="" HorizontalAlignment="Left" Margin="342,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_32" Content="" HorizontalAlignment="Left" Margin="397,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_33" Content="" HorizontalAlignment="Left" Margin="452,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_34" Content="" HorizontalAlignment="Left" Margin="508,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_37" Content="" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_38" Content="" HorizontalAlignment="Left" Margin="65,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_39" Content="" HorizontalAlignment="Left" Margin="120,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_40" Content="" HorizontalAlignment="Left" Margin="176,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_41" Content="" HorizontalAlignment="Left" Margin="231,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_42" Content="" HorizontalAlignment="Left" Margin="286,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_43" Content="" HorizontalAlignment="Left" Margin="342,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_44" Content="" HorizontalAlignment="Left" Margin="397,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_45" Content="" HorizontalAlignment="Left" Margin="452,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_46" Content="" HorizontalAlignment="Left" Margin="508,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_47" Content="" HorizontalAlignment="Left" Margin="563,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_48" Content="" HorizontalAlignment="Left" Margin="618,180,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+
+            <Label x:Name="Block_49" Content="" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_50" Content="" HorizontalAlignment="Left" Margin="65,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_51" Content="" HorizontalAlignment="Left" Margin="120,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_52" Content="" HorizontalAlignment="Left" Margin="176,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_53" Content="" HorizontalAlignment="Left" Margin="231,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_54" Content="" HorizontalAlignment="Left" Margin="286,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_55" Content="" HorizontalAlignment="Left" Margin="342,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_56" Content="" HorizontalAlignment="Left" Margin="397,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_57" Content="" HorizontalAlignment="Left" Margin="452,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_58" Content="" HorizontalAlignment="Left" Margin="508,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_59" Content="" HorizontalAlignment="Left" Margin="563,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_60" Content="" HorizontalAlignment="Left" Margin="618,238,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+
+            <Label x:Name="Block_61" Content="" HorizontalAlignment="Left" Margin="10,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_62" Content="" HorizontalAlignment="Left" Margin="65,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_63" Content="" HorizontalAlignment="Left" Margin="120,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_64" Content="" HorizontalAlignment="Left" Margin="176,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_65" Content="" HorizontalAlignment="Left" Margin="231,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_66" Content="" HorizontalAlignment="Left" Margin="286,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_67" Content="" HorizontalAlignment="Left" Margin="342,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_68" Content="" HorizontalAlignment="Left" Margin="397,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_69" Content="" HorizontalAlignment="Left" Margin="452,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_70" Content="" HorizontalAlignment="Left" Margin="508,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_71" Content="" HorizontalAlignment="Left" Margin="563,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_72" Content="" HorizontalAlignment="Left" Margin="618,293,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_35" Content="" HorizontalAlignment="Left" Margin="563,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            <Label x:Name="Block_36" Content="" HorizontalAlignment="Left" Margin="618,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Black"/>
+            
+            
     </Grid>
 </Window>

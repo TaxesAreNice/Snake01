@@ -52,6 +52,54 @@ namespace SnakeTest01
                 case 22: Block22(objectType); break;
                 case 23: Block23(objectType); break;
                 case 24: Block24(objectType); break;
+                case 25: Block25(objectType); break;
+                case 26: Block26(objectType); break;
+                case 27: Block27(objectType); break;
+                case 28: Block28(objectType); break;
+                case 29: Block29(objectType); break;
+                case 30: Block30(objectType); break;
+                case 31: Block31(objectType); break;
+                case 32: Block32(objectType); break;
+                case 33: Block33(objectType); break;
+                case 34: Block34(objectType); break;
+                case 35: Block35(objectType); break;
+                case 36: Block36(objectType); break;
+                case 37: Block37(objectType); break;
+                case 38: Block38(objectType); break;
+                case 39: Block39(objectType); break;
+                case 40: Block40(objectType); break;
+                case 41: Block41(objectType); break;
+                case 42: Block42(objectType); break;
+                case 43: Block43(objectType); break;
+                case 44: Block44(objectType); break;
+                case 45: Block45(objectType); break;
+                case 46: Block46(objectType); break;
+                case 47: Block47(objectType); break;
+                case 48: Block48(objectType); break;
+                case 49: Block49(objectType); break;
+                case 50: Block50(objectType); break;
+                case 51: Block51(objectType); break;
+                case 52: Block52(objectType); break;
+                case 53: Block53(objectType); break;
+                case 54: Block54(objectType); break;
+                case 55: Block55(objectType); break;
+                case 56: Block56(objectType); break;
+                case 57: Block57(objectType); break;
+                case 58: Block58(objectType); break;
+                case 59: Block59(objectType); break;
+                case 60: Block60(objectType); break;
+                case 61: Block61(objectType); break;
+                case 62: Block62(objectType); break;
+                case 63: Block63(objectType); break;
+                case 64: Block64(objectType); break;
+                case 65: Block65(objectType); break;
+                case 66: Block66(objectType); break;
+                case 67: Block67(objectType); break;
+                case 68: Block68(objectType); break;
+                case 69: Block69(objectType); break;
+                case 70: Block70(objectType); break;
+                case 71: Block71(objectType); break;
+                case 72: Block72(objectType); break;
                 default:
                     MessageBox.Show("Invalid block number");
                     break;
@@ -81,8 +129,56 @@ namespace SnakeTest01
         private void Block22(char o) { if (o == 'x') Block_22.Background = Brushes.Black; else if (o == '0') Block_22.Background = Brushes.Red; else if (o == '1') Block_22.Background = Brushes.Green; }
         private void Block23(char o) { if (o == 'x') Block_23.Background = Brushes.Black; else if (o == '0') Block_23.Background = Brushes.Red; else if (o == '1') Block_23.Background = Brushes.Green; }
         private void Block24(char o) { if (o == 'x') Block_24.Background = Brushes.Black; else if (o == '0') Block_24.Background = Brushes.Red; else if (o == '1') Block_24.Background = Brushes.Green; }
+        private void Block25(char o) { if (o == 'x') Block_25.Background = Brushes.Black; else if (o == '0') Block_25.Background = Brushes.Red; else if (o == '1') Block_25.Background = Brushes.Green; }
+        private void Block26(char o) { if (o == 'x') Block_26.Background = Brushes.Black; else if (o == '0') Block_26.Background = Brushes.Red; else if (o == '1') Block_26.Background = Brushes.Green; }
+        private void Block27(char o) { if (o == 'x') Block_27.Background = Brushes.Black; else if (o == '0') Block_27.Background = Brushes.Red; else if (o == '1') Block_27.Background = Brushes.Green; }
+        private void Block28(char o) { if (o == 'x') Block_28.Background = Brushes.Black; else if (o == '0') Block_28.Background = Brushes.Red; else if (o == '1') Block_28.Background = Brushes.Green; }
+        private void Block29(char o) { if (o == 'x') Block_29.Background = Brushes.Black; else if (o == '0') Block_29.Background = Brushes.Red; else if (o == '1') Block_29.Background = Brushes.Green; }
+        private void Block30(char o) { if (o == 'x') Block_30.Background = Brushes.Black; else if (o == '0') Block_30.Background = Brushes.Red; else if (o == '1') Block_30.Background = Brushes.Green; }
+        private void Block31(char o) { if (o == 'x') Block_31.Background = Brushes.Black; else if (o == '0') Block_31.Background = Brushes.Red; else if (o == '1') Block_31.Background = Brushes.Green; }
+        private void Block32(char o) { if (o == 'x') Block_32.Background = Brushes.Black; else if (o == '0') Block_32.Background = Brushes.Red; else if (o == '1') Block_32.Background = Brushes.Green; }
+        private void Block33(char o) { if (o == 'x') Block_33.Background = Brushes.Black; else if (o == '0') Block_33.Background = Brushes.Red; else if (o == '1') Block_33.Background = Brushes.Green; }
+        private void Block34(char o) { if (o == 'x') Block_34.Background = Brushes.Black; else if (o == '0') Block_34.Background = Brushes.Red; else if (o == '1') Block_34.Background = Brushes.Green; }
+        private void Block35(char o) { if (o == 'x') Block_35.Background = Brushes.Black; else if (o == '0') Block_35.Background = Brushes.Red; else if (o == '1') Block_35.Background = Brushes.Green; }
+        private void Block36(char o) { if (o == 'x') Block_36.Background = Brushes.Black; else if (o == '0') Block_36.Background = Brushes.Red; else if (o == '1') Block_36.Background = Brushes.Green; }
+        private void Block37(char o) { if (o == 'x') Block_37.Background = Brushes.Black; else if (o == '0') Block_37.Background = Brushes.Red; else if (o == '1') Block_37.Background = Brushes.Green; }
+        private void Block38(char o) { if (o == 'x') Block_38.Background = Brushes.Black; else if (o == '0') Block_38.Background = Brushes.Red; else if (o == '1') Block_38.Background = Brushes.Green; }
+        private void Block39(char o) { if (o == 'x') Block_39.Background = Brushes.Black; else if (o == '0') Block_39.Background = Brushes.Red; else if (o == '1') Block_39.Background = Brushes.Green; }
+        private void Block40(char o) { if (o == 'x') Block_40.Background = Brushes.Black; else if (o == '0') Block_40.Background = Brushes.Red; else if (o == '1') Block_40.Background = Brushes.Green; }
+        private void Block41(char o) { if (o == 'x') Block_41.Background = Brushes.Black; else if (o == '0') Block_41.Background = Brushes.Red; else if (o == '1') Block_41.Background = Brushes.Green; }
+        private void Block42(char o) { if (o == 'x') Block_42.Background = Brushes.Black; else if (o == '0') Block_42.Background = Brushes.Red; else if (o == '1') Block_42.Background = Brushes.Green; }
+        private void Block43(char o) { if (o == 'x') Block_43.Background = Brushes.Black; else if (o == '0') Block_43.Background = Brushes.Red; else if (o == '1') Block_43.Background = Brushes.Green; }
+        private void Block44(char o) { if (o == 'x') Block_44.Background = Brushes.Black; else if (o == '0') Block_44.Background = Brushes.Red; else if (o == '1') Block_44.Background = Brushes.Green; }
+        private void Block45(char o) { if (o == 'x') Block_45.Background = Brushes.Black; else if (o == '0') Block_45.Background = Brushes.Red; else if (o == '1') Block_45.Background = Brushes.Green; }
+        private void Block46(char o) { if (o == 'x') Block_46.Background = Brushes.Black; else if (o == '0') Block_46.Background = Brushes.Red; else if (o == '1') Block_46.Background = Brushes.Green; }
+        private void Block47(char o) { if (o == 'x') Block_47.Background = Brushes.Black; else if (o == '0') Block_47.Background = Brushes.Red; else if (o == '1') Block_47.Background = Brushes.Green; }
+        private void Block48(char o) { if (o == 'x') Block_48.Background = Brushes.Black; else if (o == '0') Block_48.Background = Brushes.Red; else if (o == '1') Block_48.Background = Brushes.Green; }
+        private void Block49(char o) { if (o == 'x') Block_49.Background = Brushes.Black; else if (o == '0') Block_49.Background = Brushes.Red; else if (o == '1') Block_49.Background = Brushes.Green; }
+        private void Block50(char o) { if (o == 'x') Block_50.Background = Brushes.Black; else if (o == '0') Block_50.Background = Brushes.Red; else if (o == '1') Block_50.Background = Brushes.Green; }
+        private void Block51(char o) { if (o == 'x') Block_51.Background = Brushes.Black; else if (o == '0') Block_51.Background = Brushes.Red; else if (o == '1') Block_51.Background = Brushes.Green; }
+        private void Block52(char o) { if (o == 'x') Block_52.Background = Brushes.Black; else if (o == '0') Block_52.Background = Brushes.Red; else if (o == '1') Block_52.Background = Brushes.Green; }
+        private void Block53(char o) { if (o == 'x') Block_53.Background = Brushes.Black; else if (o == '0') Block_53.Background = Brushes.Red; else if (o == '1') Block_53.Background = Brushes.Green; }
+        private void Block54(char o) { if (o == 'x') Block_54.Background = Brushes.Black; else if (o == '0') Block_54.Background = Brushes.Red; else if (o == '1') Block_54.Background = Brushes.Green; }
+        private void Block55(char o) { if (o == 'x') Block_55.Background = Brushes.Black; else if (o == '0') Block_55.Background = Brushes.Red; else if (o == '1') Block_55.Background = Brushes.Green; }
+        private void Block56(char o) { if (o == 'x') Block_56.Background = Brushes.Black; else if (o == '0') Block_56.Background = Brushes.Red; else if (o == '1') Block_56.Background = Brushes.Green; }
+        private void Block57(char o) { if (o == 'x') Block_57.Background = Brushes.Black; else if (o == '0') Block_57.Background = Brushes.Red; else if (o == '1') Block_57.Background = Brushes.Green; }
+        private void Block58(char o) { if (o == 'x') Block_58.Background = Brushes.Black; else if (o == '0') Block_58.Background = Brushes.Red; else if (o == '1') Block_58.Background = Brushes.Green; }
+        private void Block59(char o) { if (o == 'x') Block_59.Background = Brushes.Black; else if (o == '0') Block_59.Background = Brushes.Red; else if (o == '1') Block_59.Background = Brushes.Green; }
+        private void Block60(char o) { if (o == 'x') Block_60.Background = Brushes.Black; else if (o == '0') Block_60.Background = Brushes.Red; else if (o == '1') Block_60.Background = Brushes.Green; }
+        private void Block61(char o) { if (o == 'x') Block_61.Background = Brushes.Black; else if (o == '0') Block_61.Background = Brushes.Red; else if (o == '1') Block_61.Background = Brushes.Green; }
+        private void Block62(char o) { if (o == 'x') Block_62.Background = Brushes.Black; else if (o == '0') Block_62.Background = Brushes.Red; else if (o == '1') Block_62.Background = Brushes.Green; }
+        private void Block63(char o) { if (o == 'x') Block_63.Background = Brushes.Black; else if (o == '0') Block_63.Background = Brushes.Red; else if (o == '1') Block_63.Background = Brushes.Green; }
+        private void Block64(char o) { if (o == 'x') Block_64.Background = Brushes.Black; else if (o == '0') Block_64.Background = Brushes.Red; else if (o == '1') Block_64.Background = Brushes.Green; }
+        private void Block65(char o) { if (o == 'x') Block_65.Background = Brushes.Black; else if (o == '0') Block_65.Background = Brushes.Red; else if (o == '1') Block_65.Background = Brushes.Green; }
+        private void Block66(char o) { if (o == 'x') Block_66.Background = Brushes.Black; else if (o == '0') Block_66.Background = Brushes.Red; else if (o == '1') Block_66.Background = Brushes.Green; }
+        private void Block67(char o) { if (o == 'x') Block_67.Background = Brushes.Black; else if (o == '0') Block_67.Background = Brushes.Red; else if (o == '1') Block_67.Background = Brushes.Green; }
+        private void Block68(char o) { if (o == 'x') Block_68.Background = Brushes.Black; else if (o == '0') Block_68.Background = Brushes.Red; else if (o == '1') Block_68.Background = Brushes.Green; }
+        private void Block69(char o) { if (o == 'x') Block_69.Background = Brushes.Black; else if (o == '0') Block_69.Background = Brushes.Red; else if (o == '1') Block_69.Background = Brushes.Green; }
+        private void Block70(char o) { if (o == 'x') Block_70.Background = Brushes.Black; else if (o == '0') Block_70.Background = Brushes.Red; else if (o == '1') Block_70.Background = Brushes.Green; }
+        private void Block71(char o) { if (o == 'x') Block_71.Background = Brushes.Black; else if (o == '0') Block_71.Background = Brushes.Red; else if (o == '1') Block_71.Background = Brushes.Green; }
+        private void Block72(char o) { if (o == 'x') Block_72.Background = Brushes.Black; else if (o == '0') Block_72.Background = Brushes.Red; else if (o == '1') Block_72.Background = Brushes.Green; }
 
-        
+
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
