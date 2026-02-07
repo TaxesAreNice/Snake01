@@ -5,6 +5,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Threading;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -16,13 +17,202 @@ namespace SnakeTest01
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int playerPos = 3;
+        private string playerMovment = ""; // typo, ahhhhhh! >:(   i've used it too much now, so, oh welp....
+        private string backUpPlayerMovment = "";
+        private bool PlayerDead = false;
+        private int applePosition = 0;
+        private int mapHight = 6;
+        private int mapLenght = 12;
+        private char Char_Tester = ' ';
+
+        private List<List<char>> Map = new List<List<char>>();
+
+        Random AppleSpawn = new Random();
+
+        DispatcherTimer timer = new DispatcherTimer();
         public MainWindow()
         {
             InitializeComponent();
+            FillingDaMapUpAtStart();
             this.Focus();
+
+            timer.Interval = TimeSpan.FromSeconds(0.2);
+            timer.Tick += Timer_Tick;
+            timer.Start();
+
+            SpawningDaApple();
+        }
+        
+        private void FillingDaMapUpAtStart()
+        {
+            for (int i = 0; i < mapHight; i++)
+            {
+                Map.Add(new List<char>());
+                for (int j = 0; j < mapLenght; j++)
+                {
+                    Map[i].Add('x');
+                }
+            }
+            Map[0][0] = '1';
+            Map[0][1] = '1';
+            Map[0][2] = '1';
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            
+            if (PlayerDead)
+            {
+                timer.Stop();
+                Window.Close();
+                return;
+            }
+
+                  if ((playerMovment == "right" && backUpPlayerMovment == "left") ||
+                      (playerMovment == "left"  && backUpPlayerMovment == "right") ||
+                      (playerMovment == "up"    && backUpPlayerMovment == "down") ||
+                      (playerMovment == "down"  && backUpPlayerMovment == "up")
+                     )
+                  {
+                playerMovment = backUpPlayerMovment;
+                  }
+
+                
+
+            if (playerMovment == "right")
+                {
+                    SettingSpesificColor('x', playerPos);
+                    playerPos++;
+                    SettingSpesificColor('1', playerPos);
+                    
+                }
+                else if (playerMovment == "left")
+                {
+                    SettingSpesificColor('x', playerPos);
+                    playerPos--;
+                    SettingSpesificColor('1', playerPos);
+                    
+                }
+                else if (playerMovment == "up")
+                {
+                    SettingSpesificColor('x', playerPos);
+                    playerPos -= 12;
+                    SettingSpesificColor('1', playerPos);
+                    
+                }
+                else if (playerMovment == "down")
+                {
+                    SettingSpesificColor('x', playerPos);
+                    playerPos += 12;
+                    SettingSpesificColor('1', playerPos);
+                    
+                }
+
+                backUpPlayerMovment = playerMovment;
+                CheckingForApples();
+            }
+        
+
+
+       
+       private void CheckingForApples()
+        {
+           if (playerPos == applePosition)
+            {
+                //SettingSpesificColor('x', applePosition);
+                SpawningDaApple();
+            }
+        }
+        private void SpawningDaApple()
+        {
+            bool finished = false;
+            char daIdentity = ' ';
+
+            while (!finished)
+            {
+                applePosition = AppleSpawn.Next(1, mapLenght * mapHight); // 72
+                daIdentity = GrabingTheIdentityOfAPosition(applePosition);
+
+                if (daIdentity != '1')
+                {
+                    finished = true;
+                }
+            }
+            SettingSpesificColor('0', applePosition);
+            
         }
 
-        int playerPos = 1;
+        private char GrabingTheIdentityOfAPosition(int DaPosition)
+        {
+            int y = 0;
+            int x = 0;
+            int i = 0;
+            bool notContinue = false;
+
+            if (DaPosition < mapLenght)
+            {
+                y = 0;
+                x = DaPosition;
+            }
+            else
+            {
+                while (!notContinue)
+                {
+                    DaPosition -= mapLenght;
+
+                    if (DaPosition < mapLenght)
+                    {
+                        y = i;
+                        x = DaPosition;
+                        notContinue = true;
+                    }
+                    i++;
+                }
+            }
+                return Map[y][x];
+            
+        }
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Key.W:
+                    MoveUp();
+                    break;
+
+                case Key.A:
+                    MoveLeft();
+                    break;
+
+                case Key.S:
+                    MoveDown();
+                    break;
+
+                case Key.D:
+                    MoveRight();
+                    break;
+            }
+        }
+        private void MoveRight()
+        {
+            playerMovment = "right";
+        }
+        private void MoveDown()
+        {
+            playerMovment = "down";
+        }
+        private void MoveLeft()
+        {
+            playerMovment = "left";
+        }
+        private void MoveUp()
+        {
+            playerMovment = "up";
+        }
+
+
+
+
 
         public void SettingSpesificColor(char objectType, int objectNumber)
         {
@@ -177,54 +367,6 @@ namespace SnakeTest01
         private void Block70(char o) { if (o == 'x') Block_70.Background = Brushes.Black; else if (o == '0') Block_70.Background = Brushes.Red; else if (o == '1') Block_70.Background = Brushes.Green; }
         private void Block71(char o) { if (o == 'x') Block_71.Background = Brushes.Black; else if (o == '0') Block_71.Background = Brushes.Red; else if (o == '1') Block_71.Background = Brushes.Green; }
         private void Block72(char o) { if (o == 'x') Block_72.Background = Brushes.Black; else if (o == '0') Block_72.Background = Brushes.Red; else if (o == '1') Block_72.Background = Brushes.Green; }
-
-
-
-        private void Window_KeyDown(object sender, KeyEventArgs e)
-        {
-            switch (e.Key)
-            {
-                case Key.W:
-                    MoveUp();
-                    break;
-
-                case Key.A:
-                    MoveLeft();
-                    break;
-
-                case Key.S:
-                    MoveDown();
-                    break;
-
-                case Key.D:
-                    MoveRight();
-                    break;
-            }
-        }
-        private void MoveRight()
-        {
-            SettingSpesificColor('x', playerPos);
-            playerPos++;
-            SettingSpesificColor('1', playerPos);
-        }
-        private void MoveDown()
-        {
-            SettingSpesificColor('x', playerPos);
-            playerPos += 12;
-            SettingSpesificColor('1', playerPos);
-        }
-        private void MoveLeft()
-        {
-            SettingSpesificColor('x', playerPos);
-            playerPos--;
-            SettingSpesificColor('1', playerPos);
-        }
-        private void MoveUp()
-        {
-            SettingSpesificColor('x', playerPos);
-            playerPos -= 12;
-            SettingSpesificColor('1', playerPos);
-        }
 
     }
 }
